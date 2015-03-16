@@ -1,5 +1,5 @@
 # Casper-Theme-for-Wordpress
-================
+
 How to use:
 ------------
 + Download the theme zip file and install.
