@@ -1,0 +1,8 @@
+@import 'globals';
+
+.ajax-load-more-wrap.white button.alm-load-more-btn{
+  @include get_gradiant(#ffffff, #ffffff, 0.4);
+  border: none !important;
+  font-weight: 300;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}

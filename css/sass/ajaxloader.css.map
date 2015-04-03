@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;AAEA,mDAAmD;ECwCjD,gBAAgB,EAAE,wHAAiK;EACnL,gBAAgB,EAAE,2FAAoI;EACtJ,gBAAgB,EAAE,wFAAiI;EACnJ,gBAAgB,EAAE,sFAA+H;EACjJ,gBAAgB,EAAE,uFAAgI;EAClJ,gBAAgB,EAAE,mFAA4H;ED3C9I,MAAM,EAAE,eAAe;EACvB,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,2DAA2D",
+"sources": ["ajaxloader.scss","globals.scss"],
+"names": [],
+"file": "ajaxloader.css"
+}

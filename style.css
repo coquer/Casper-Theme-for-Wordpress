@@ -1,0 +1,53 @@
+/*
+  Theme Name:       Ghost-like
+  Theme URI:        http://blog.jorgerodriguez.dk
+  Author:           Jorge Rodriguez (jycr7530
+  Author URI:       http://blog.jorgerodriguez.dk
+  Description:      A Ghost-like WordPress
+  Version:          1.0
+*/
+/*
+Copyright 2015 Jorge Rodriguez(jycr753)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+ */
+
+/*
+Theme Structure
+    * All files at the moment are inside the
+    sass folder, in order to compile, just use
+        $ sass --watch .:.
+    inside this directory.
+
+    -> reset
+        - Default reset SASS file
+    -> icons
+        - Contains all classes used to generate the icons.
+    -> animations
+        - containes all custom animations and mixing to generate animations
+    -> nav
+        - SASS for all nav related elements
+    -> globals
+        - All default values
+    -> ajaxloader
+        - Ajax loader related SASS
+
+    The rest of SASS is contained in main file, this file also imports all this other files
+    to generate a single file.
+
+    --- Next version will be change to gruntjs
+
+*/
+
+
+

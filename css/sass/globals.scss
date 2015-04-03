@@ -1,0 +1,49 @@
+//COLORS
+//$color_font:
+
+
+//MIXIN FUNCTIONS
+@mixin transition($transition-property, $transition-time, $method) {
+  -webkit-transition: $transition-property $transition-time $method;
+  -moz-transition: $transition-property $transition-time $method;
+  -ms-transition: $transition-property $transition-time $method;
+  -o-transition: $transition-property $transition-time $method;
+  transition: $transition-property $transition-time $method;
+}
+
+/*
+@include box-shadow(0, 1px, 0px, $color_input_light);
+@include transition(all, $speed_animation_70s, ease);
+*/
+
+@mixin box-shadow($top, $left, $blur, $color: "", $inset: "") {
+  -webkit-box-shadow: $top $left $blur #{$color} #{$inset};
+  -moz-box-shadow: $top $left $blur #{$color} #{$inset};
+  box-shadow: $top $left $blur #{$color} #{$inset};
+}
+
+@mixin linear-gradient($from_color, $to_color) {
+  background-color: $to_color;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($from_color), to($to_color));
+  background-image: -webkit-linear-gradient(top, $from_color, $to_color);
+  background-image: -moz-linear-gradient(top, $from_color, $to_color);
+  background-image: -ms-linear-gradient(top, $from_color, $to_color);
+  background-image: -o-linear-gradient(top, $from_color, $to_color);
+  background-image: linear-gradient(top, $from_color, $to_color);
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, StartColorStr='#{$from_color}', EndColorStr='#{$to_color}');
+}
+
+@mixin get_gradiant($from_color, $to_color, $alpha:0.7){
+  $from_red: red($from_color);
+  $from_green: green($from_color);
+  $from_blue: blue($from_color);
+  $to_red: red($to_color);
+  $to_green: green($to_color);
+  $to_blue: blue($to_color);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba($from_red, $from_green, $from_blue, $alpha)), to(rgba($to_red, $to_green, $to_blue,$alpha))) !important;
+  background-image: -webkit-linear-gradient(top, rgba($from_red, $from_green, $from_blue, $alpha), rgba($to_red, $to_green, $to_blue,$alpha)) !important;
+  background-image: -moz-linear-gradient(top, rgba($from_red, $from_green, $from_blue, $alpha), rgba($to_red, $to_green, $to_blue,$alpha)) !important;
+  background-image: -o-linear-gradient(top, rgba($from_red, $from_green, $from_blue, $alpha), rgba($to_red, $to_green, $to_blue,$alpha)) !important;
+  background-image: -ms-linear-gradient(top, rgba($from_red, $from_green, $from_blue, $alpha), rgba($to_red, $to_green, $to_blue,$alpha)) !important;
+  background-image: linear-gradient(top, rgba($from_red, $from_green, $from_blue, $alpha), rgba($to_red, $to_green, $to_blue,$alpha)) !important;
+}
