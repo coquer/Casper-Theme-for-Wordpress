@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/jycr753/Casper-Theme-for-Wordpress.png?label=ready&title=Ready)](https://waffle.io/jycr753/Casper-Theme-for-Wordpress)
 # Casper-Theme-for-Wordpress
 
 How to use:
