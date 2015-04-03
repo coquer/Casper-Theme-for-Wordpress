@@ -16,21 +16,32 @@ Browser  | Support
 |Safari  | True |
 |Firefox  | True |
 |IE > 9  | True |
+|iOS	| True |
 
 
 TODO
 ------------
 
-- [x] XXXX
-- [ ] XXXX
-
+- [x] Upload the init
+- [ ] Integrate Ajax functions for infinity scrolling support
+- [ ] Fix error in mobiles, processing image colors
+- [ ] Force Cache of content from theme settings
+- [ ] Enable Upload mobile icons from theme customization
+- [ ] Animations for mobile menu
+- [ ] Tablet support
+- [ ] Set globals for colors in theme
+- [ ] Integrate with Angularjs -> just becuase ;)
+- [ ] Comment the code, whatever is missing... 
+- [ ] Integrate grunt to the app.
+- [ ] ?App access from homescreen mobiles, default to ajax mode?!
+- [ ] 
 
 License
 -------
 
 	The MIT License (MIT)
 
-	Copyright (c) 2015 Jorge Rodriguez
+	Copyright (c) 2015 Jorge Rodriguez (jycr753)
 	
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
