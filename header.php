@@ -13,7 +13,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="HandheldFriendly" content="True" />
 <meta name="MobileOptimized" content="320" />
@@ -31,13 +31,7 @@
 
 <body <?php body_class(); ?>>
 <?php
-$image_url = "";
-if(has_post_thumbnail()){
-  $image_url_arr = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full');
-  $image_url = $image_url_arr[0];
-} elseif(get_header_image()){
-    $image_url = get_header_image();
-}
+$image_url = getHeaderImage();
 ?>
 
 <header id="masthead" role="banner" class="site-head site-header" <?php if($image_url): ?> style="background-image: url(<?php echo($image_url); ?>);"<?php endif ?>>

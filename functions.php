@@ -238,4 +238,19 @@ function casper_customizer_head() {
 }
 endif;
 //add_action( 'wp_head', 'casper_customizer_head' );
+
+/**
+ * Get Header image.
+ * @return absolute path for the image
+ */
+function getHeaderImage(){
+	if(has_post_thumbnail()){
+		$image_url_arr = wp_get_attachment_image_src( get_post_thumbnail_id(get_the_ID()), 'full');
+		return $image_url_arr[0];
+	} elseif(get_header_image()){
+		return get_header_image();
+	}
+}
+
+
 ?>
